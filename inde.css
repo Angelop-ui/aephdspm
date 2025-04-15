@@ -86,21 +86,3 @@ h3 {
     padding: 0 20px; /* Añade margen a los lados */
 }
 
-/* Estilo base para imágenes */
-.imagen-redonda {
-    width: 350px; /* Ajusta el tamaño */
-    height: 150px;
-    object-fit: cover; /* Evita deformaciones */
-    border-radius: 20px; /* Bordes redondeados */
-    margin-bottom: 50px; /* Espacio entre imágenes */
-}
-
-/* Imágenes a la izquierda */
-.izquierda {
-    margin-right: 100px; /* Empuja hacia la izquierda */
-}
-
-/* Imágenes a la derecha */
-.derecha {
-    margin-left: 100px; /* Empuja hacia la derecha */
-}
