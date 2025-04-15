@@ -293,3 +293,38 @@ input[type="checkbox"] {
   transform: scale(1.3);
   margin-right: 10px;
 }
+/* Contenedor principal de los botones */
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* Ajustes para los formularios */
+.botones form {
+  display: block; /* Cambia de flex a block */
+  margin: 0;
+  padding: 0;
+}
+
+/* Opcional: Efecto hover para las tarjetas */
+.card-button:hover, .card-button2:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Opcional: Hacer responsive las tarjetas */
+@media (max-width: 768px) {
+  .botones {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .botones {
+    grid-template-columns: 1fr;
+  }
+}
