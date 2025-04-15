@@ -4,7 +4,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #000000;
+    background-image: url('fondo.png');
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
