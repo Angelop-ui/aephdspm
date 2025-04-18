@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reproductor de Música</title>
+  <link rel="stylesheet" href="musica.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <div class="music-player">
+    <div class="album-carousel">
+      <img src="blah.jpg" class="album-cover" id="cover" />
+    </div>
+
+    <h1 id="songName">Blah Blah Blah</h1>
+    <p id="artistName">Armin van Buuren</p>
+
+    <audio id="song">
+      <source src="Armin van Buuren - Blah Blah Blah (Official Lyric Video).mp3" type="audio/mp3" />
+    </audio>
+
+    <input type="range" value="0" id="progress"/>
+
+    <div class="controls">
+      <button class="regresar"><i class="fa-solid fa-backward"></i></button>
+      <button class="play-pause"><i class="fa-solid fa-play" id="control"></i></button>
+      <button class="siguiente"><i class="fa-solid fa-forward"></i></button>
+    </div>
+  </div>
+  <script src="musica.js"></script>
+</body>
+</html>
