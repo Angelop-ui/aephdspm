@@ -81,7 +81,6 @@ h3 {
 .galeria {
     margin-top: 40px; /* Espacio después del botón */
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between; /* Distribuye espacio entre imágenes */
     padding: 0 20px; /* Añade margen a los lados */
 }
