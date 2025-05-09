@@ -251,60 +251,60 @@ const adoloridosPlayer = {
       background: "url('ende.jpg')"
     },
     {
-      title: "BEIBY REMIX",
-      name: "El Malilla, Cachirula, Loojan",
-      source: "BEIBY Remix - Cachirula, Loojan, El Malilla.mp3",
-      cover: "baby.jpg",
-      background: "linear-gradient(135deg,rgb(34, 173, 228),rgb(34, 173, 228))"
+      title: "Extssy Model",
+      name: "Junior H",
+      source: "Extssy Model - Junior H (Video Letra).mp3",
+      cover: "ext.jpg",
+      background: "url(ext.jpg)"
     },
     {
-      title: "Fuga",
-      name: "El Bogueto",
-      source: "El Bogueto , Brand Randall - Fuga - No Hay Loco Que No Corone 👑 ( Visualizer ).mp3",
-      cover: "nlnc.jpg",
-      background: "linear-gradient(135deg,rgb(104, 87, 87),rgb(104, 87, 87))"
+      title: "Neta",
+      name: "Junior H, Gabito BAllesteros",
+      source: "Gabito Ballesteros, Junior H - Neta (Official Lyric Video).mp3",
+      cover: "nt.jpg",
+      background: "url(nt.jpg)"
     },
     {
-      title: "Pri",
-      name: "El Bogueto",
-      source: "Bogueto - Pri (Audio Oficial).mp3",
-      cover: "pri.jpg",
-      background: "linear-gradient(135deg,rgb(151, 5, 5),rgb(0, 80, 112))"
+      title: "¿Porque Terminamos?",
+      name: "Gerardo Ortiz",
+      source: "Gerardo Ortiz - ¿Por Qué Terminamos (Audio).mp3",
+      cover: "pq.jfif",
+      background: "url(pq.jfif)"
     },
     {
-      title: "Dime",
-      name: "El Malilla",
-      source: "El Malilla - Dime (Audio Oficial).mp3",
-      cover: "dime.png",
-      background: "url(dimef.jpg)"
+      title: "Jueves 10",
+      name: "Junior H",
+      source: "Junior H - Jueves 10 (LetraLyric Video) 2020.mp3",
+      cover: "j1.jpg",
+      background: "url(j1.jpg)"
     },
     {
-      title: "Tiki",
-      name: "El Malilla",
-      source: "El Malilla - Tiki (Lyric Video) ft Gitana, Yeri Mua, Dj Kiire & Dj Rockwell.mp3",
-      cover: "tiki.jpg",
-      background: "linear-gradient(135deg,rgb(0, 0, 0),rgb(0, 0, 0))"
+      title: "Y Lloro",
+      name: "Junior H",
+      source: "Junior H - Y LLORO.mp3",
+      cover: "ll.jpg",
+      background: "url(ll.jpg)"
     },
     {
-      title: "Soltero",
-      name: "El Malilla",
-      source: "El Malilla - Soltero (Video Oficial).mp3",
-      cover: "soltero.png",
-      background: "linear-gradient(135deg,rgb(0, 0, 0),rgb(0, 0, 0))"
+      title: "El Final De Nuestra Historia",
+      name: "La Arrolladora",
+      source: "La Arrolladora Banda El Limón De René Camacho - El Final De Nuestra Historia (Visualizer).mp3",
+      cover: "ef.jfif",
+      background: "url(ef.jfif)"
     },
     {
-      title: "Mi Nena",
-      name: "El Bogueto",
-      source: "El Bogueto , Jory Boy , Uzielito mix - Mi nena - No Hay Loco Que No Corone 👑 ( Visualizer ).mp3",
-      cover: "nlnc.jpg",
-      background: "linear-gradient(135deg, rgb(104, 87, 87),rgb(104, 87, 87))"
+      title: "Esa Mujer",
+      name: "Los Buitres De Culiacan",
+      source: "Los Buitres De Culiacán Sinaloa - Esa Mujer (Cover Audio Video).mp3",
+      cover: "em.jfif",
+      background: "url(em.jfif)"
     },
     {
-      title: "Prendete",
-      name: "El Malilla, Yeyo, Ezya",
-      source: "El Malilla, Yeyo, Ezya - Préndete (Video Oficial).mp3",
-      cover: "pre.jpg",
-      background: "linear-gradient(135deg,rgb(0, 0, 0), rgb(0, 0, 0))"
+      title: "Ya Acabo",
+      name: "Marca MP",
+      source: "ya-acabó-letra.mp3",
+      cover: "yc.jpg",
+      background: "url(yc.jpg)"
     }
   ],
   currentSongIndex: 0
