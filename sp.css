@@ -1,5 +1,6 @@
 /* Estilos base */
 body {
+  cursor: url("cursor.cur"), auto;
   margin: 0;
   font-family: 'Arial', sans-serif;
   background-image: url('fondo.png');
