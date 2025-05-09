@@ -1,28 +1,28 @@
+/* Estilos base */
 body {
-  background-image: url('fondo.png');
-  background-size: contain;
   margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('fondo.png');
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   padding: 20px;
-  overflow-x: hidden;
-  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  overflow: visible;
 }
 
-.carousel-container {
-  scroll-snap-type: x mandatory;
-  gap: 20px;
-  padding: 20px 0;
-  scrollbar-width: none;
-}
-
-.carousel-container::-webkit-scrollbar {
-  display: none;
-}
-
-form {
-  gap: 20px;
-  padding: 0 20px;
-}
-
+/* Estilo general para botones tipo tarjeta */
 .card-button, .card-button2 {
   scroll-snap-align: center;
   width: 190px;
@@ -35,10 +35,26 @@ form {
   position: relative;
 }
 
-/* Estilos comunes para todas las tarjetas */
+.card-button:hover, .card-button2:hover {
+  transform: scale(1.05);
+}
+
+/* Contenido de la tarjeta */
 .card, .card2, .card3, .card4, .card5, .card6 {
   width: 100%;
   height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  text-shadow: 1px 1px 4px #000;
+  position: relative;
+  border-radius: 12px;
   position: relative;
   place-content: center;
   place-items: center;
@@ -49,23 +65,112 @@ form {
   background-blend-mode: overlay;
 }
 
-h2, h5 {
-  z-index: 1;
-  color: white;
+/* Ejemplo de fondo por tarjeta */
+.card { background-image: url('motiv.jpg'); }
+.card2 { background-image: url('ruti.jpg'); }
+.card3 { background-image: url('pro.jpeg'); }
+.card4 { background-image: url('music.jpg'); }
+.card5 { background-image: url('bie.jpg'); }
+.card6 { background-image: url('glo.jpg'); }
+
+/* Texto principal */
+.p1 {
   text-align: center;
-  margin-left: 10px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: white;
+}
+.mito {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-h2 {
-  font-size: 2em;
-  text-shadow: 10px 10px 10px rgba(52, 122, 116, 0.8);
+/* Título "Mito" */
+.mito h1 {
+  color: #ff6b6b;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
 }
 
-h5 {
-  font-size: 1.5em;
-  text-shadow: 10px 10px 10px rgba(52, 122, 116, 0.8);
+/* Cita (frase entre comillas) */
+.mito p {
+  color: #e2e2e2;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  margin: 20px 0;
+  border: 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Sección realidad */
+.realidad {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #52b788;
+  padding-top: 20px;
+}
+
+/* Subtítulo "Realidad" */
+.realidad h3 {
+  text-align: center;
+  color: #52b788;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Texto explicativo */
+.realidad p {
+  color: bisque;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 80%;
+  margin: 0 auto;
+  border: 20px rgba(0, 0, 0, 0.1);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .botones {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .card-button, .card-button2 {
+    width: 45%;
+    min-width: 150px;
+    height: auto;
+  }
+
+  .card, .card2, .card3, .card4, .card5, .card6 {
+    height: 180px;
+  }
+
+  .texto-central {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-button, .card-button2 {
+    width: 100%;
+  }
+
+  .texto-central {
+    font-size: 0.95rem;
+  }
+}
+/*card
 /* Tarjeta 1 - Consejos */
 .card {
   background-image: url('motiv.jpg');
@@ -74,9 +179,8 @@ h5 {
 .card::before {
   content: '';
   width: 100px;
-  background-image: linear-gradient(180deg, rgba(0, 183, 255, 0.7), rgba(255, 48, 255, 0.7));
   height: 130%;
-  animation: rotBGimg 3s linear infinite;
+  
   transition: all 0.2s linear;
   margin-left: 5px;
 }
@@ -86,7 +190,7 @@ h5 {
   position: absolute;
   inset: 5px;
   border-radius: 5px;
-  margin-left: 100px;
+  margin-left: 5px;
 }
 
 @keyframes rotBGimg {
@@ -199,125 +303,4 @@ h5 {
   0%, 100% { transform: rotate(0deg); }
   25% { transform: rotate(-3deg); }
   75% { transform: rotate(3deg); }
-}
-/* Estilos para el párrafo motivacional */
-.p1 {
-  justify-content: center;
-  width: 100%;
-  margin-top: 20px;
-  font-family:  sans-serif;
-}
-
-.frase1 {
-  font-size: 2.5rem; /* Equivale a ~40px (mejor para responsive) */
-  color: aliceblue;
-  text-align: center;
-  margin: 0;
-  padding: 10px;
-  font-weight: 700; /* Negrita para destacar título */
-  letter-spacing: 0.5px; /* Mejor legibilidad */
-}
-.mi, .ini{
-  font-size: 1.8rem; /* ~29px, diferencia clara con el título */
-  color: rgb(196, 212, 226);
-  text-align: center;
-  margin: 0;
-  padding: 10px;
-  font-weight: 600; /* Seminegrita para subtítulos */
-  opacity: 0.9; /* Sutil diferencia jerárquica */
-}
-/* Contenedor mito */
-.mito {
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Título "Mito" */
-.mito h1 {
-  color: #ff6b6b;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 3rem;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  margin-bottom: 10px;
-}
-
-/* Cita (frase entre comillas) */
-.mito p {
-  color: #e2e2e2;
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-size: 1.5rem;
-  margin: 20px 0;
-  border: 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Sección realidad */
-.realidad {
-  text-align: center;
-  margin-top: 30px;
-  border-top: 1px solid #52b788;
-  padding-top: 20px;
-}
-
-/* Subtítulo "Realidad" */
-.realidad h3 {
-  text-align: center;
-  color: #52b788;
-  font-family: 'Inter', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-/* Texto explicativo */
-.realidad p {
-  color: bisque;
-  font-family: 'Inter', sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  max-width: 80%;
-  margin: 0 auto;
-  border: 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Checkbox (opcional) */
-input[type="checkbox"] {
-  accent-color: #52b788;
-  transform: scale(1.3);
-  margin-right: 10px;
-}
-/* Contenedor principal de los botones */
-.botones {
-  display: flex;
-  gap: 20px;
-  margin: 20px auto;
-  max-width: 1200px;
-  padding: 0 20px;
-}
-
-/* Ajustes para los formularios */
-.botones form {
-  margin: 0;
-  padding: 0;
-}
-
-/* Opcional: Efecto hover para las tarjetas */
-.card-button:hover, .card-button2:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
-
-/* Opcional: Hacer responsive las tarjetas */
-@media (max-width: 768px) {
-  .botones {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .botones {
-    grid-template-columns: 1fr;
-  }
 }
