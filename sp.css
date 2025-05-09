@@ -66,12 +66,23 @@ h1 {
 }
 
 /* Ejemplo de fondo por tarjeta */
-.card { background-image: url('motiv.jpg'); }
-.card2 { background-image: url('ruti.jpg'); }
-.card3 { background-image: url('pro.jpeg'); }
-.card4 { background-image: url('music.jpg'); }
-.card5 { background-image: url('bie.jpg'); }
-.card6 { background-image: url('glo.jpg'); }
+.card { 
+  background-image: url('motiv.jpg'); 
+  cursor: url("cursor.cur"), auto; 
+}
+.card2 { 
+  background-image: url('ruti.jpg'); 
+  cursor: url("cursor.cur"), auto;}
+.card3 { 
+  background-image: url('pro.jpeg'); 
+  cursor: url("p.cur"), auto;
+}
+.card4 { 
+  background-image: url('music.jpg'); 
+  cursor: url("m.cur"), auto;
+}
+.card5 { background-image: url('bie.jpg'); cursor: url("cursor.cur"), auto;}
+.card6 { background-image: url('glo.jpg'); cursor: url("l.cur"), auto;}
 
 /* Texto principal */
 .p1 {
