@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animales en peligro</title>
+  <link rel="stylesheet" href="pierna.css">
+</head>
+<body>
+
+<div class="slider" id="slider">
+  <section class="slide" style="background-image: url('pierna.jpg')">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Amur Leopard</h1>
+      <p>Estado: <strong>En Peligro Crítico</strong></p>
+      <p>Solo quedan cerca de 100 en vida silvestre.</p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Tigre de Sumatra</h1>
+      <p>Estado: <strong>En Peligro Crítico</strong></p>
+      <p>Quedan menos de 400.</p>
+    </div>
+    <div class="content right">
+        <video autoplay muted loop playsinline class="video-bg">
+          <source src="CURL MARTILLO MANCUERNA DE PIE.mp4" type="video/mp4">
+        </video>
+    </div>
+  </section>
+
+  <section class="slide" style="background-image: url('images/rinoceronte.jpg')">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Rinoceronte de Java</h1>
+      <p>Estado: <strong>En Peligro Crítico</strong></p>
+      <p>Menos de 80 ejemplares.</p>
+    </div>
+  </section>
+</div>
+
+<!-- Dots -->
+<div class="nav-dots" id="dots">
+  <span class="active"></span>
+  <span></span>
+  <span></span>
+</div>
+
+<script>
+  const slider = document.getElementById('slider');
+  const dots = document.querySelectorAll('#dots span');
+  let current = 0;
+
+  function goToSlide(index) {
+    slider.style.transform = `translateX(-${index * 100}vw)`;
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+    current = index;
+  }
+
+  dots.forEach((dot, idx) => {
+    dot.addEventListener('click', () => goToSlide(idx));
+  });
+
+  // Swipe para móviles
+  let startX = 0;
+  slider.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  slider.addEventListener('touchend', (e) => {
+    const endX = e.changedTouches[0].clientX;
+    const delta = endX - startX;
+
+    if (delta > 50 && current > 0) goToSlide(current - 1);
+    else if (delta < -50 && current < 2) goToSlide(current + 1);
+  });
+</script>
+
+</body>
+</html>
