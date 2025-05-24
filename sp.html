@@ -112,9 +112,38 @@
                   <p>Los suplementos pueden ayudar, pero no son necesarios para ganar músculo. </p>
                 </div>
               </div>
+              <div class="formulario-contacto" data-aos="fade-up">
+  <h2 style="color:white;">¿Tienes dudas o sugerencias?</h2>
+  <form id="contact-form">
+    <input type="text" name="user_name" placeholder="Tu nombre" required>
+    <input type="email" name="user_email" placeholder="Tu correo electrónico" required>
+    <textarea name="message" placeholder="Escribe tu mensaje aquí" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+  <p id="form-status" style="color:lime;"></p>
+</div>
+
         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
         <script>
             AOS.init();
         </script>
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("ufz6pBr0wR1SuSKdq"); // Reemplaza con tu User ID de EmailJS
+
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_9yl63nr', 'template_l7owg4v', this)
+      .then(() => {
+        document.getElementById('form-status').textContent = 'Mensaje enviado correctamente ✔️';
+        this.reset();
+      }, (error) => {
+        document.getElementById('form-status').textContent = 'Error al enviar el mensaje ❌';
+        console.error(error);
+      });
+  });
+</script>
+
     </body>
 </html>
