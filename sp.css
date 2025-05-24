@@ -316,3 +316,36 @@ h1 {
   25% { transform: rotate(-3deg); }
   75% { transform: rotate(3deg); }
 }
+.formulario-contacto {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid #00ffcc;
+  border-radius: 15px;
+  background-color: rgba(0,0,0,0.6);
+  text-align: center;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+.formulario-contacto button {
+  background-color: #00ffcc;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario-contacto button:hover {
+  background-color: #00ddaa;
+}
