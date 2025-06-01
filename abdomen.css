@@ -13,7 +13,10 @@
       background-position: center; /* Centra la imagen */
       background-attachment: fixed; /* Opcional: fija la imagen al desplazarse */
     }
-
+    .chica{
+  width: 300px; /* Ancho de 300 píxeles */
+  height: 200px; /* Alto de 200 píxeles */
+}
     .slider {
       display: flex;
       transition: transform 0.8s ease;
