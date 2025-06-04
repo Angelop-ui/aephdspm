@@ -121,12 +121,12 @@
         </script>
         <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script>
-  emailjs.init("ufz6pBr0wR1SuSKdq"); // Reemplaza con tu User ID de EmailJS
+  emailjs.init("u98NtQ1_FstoPPeTZ"); // Reemplaza con tu User ID de EmailJS
 
   document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    emailjs.sendForm('service_9yl63nr', 'template_l7owg4v', this)
+    emailjs.sendForm('service_wcp5zxb', 'template_pllyj2n', this)
       .then(() => {
         document.getElementById('form-status').textContent = 'Mensaje enviado correctamente ✔️';
         this.reset();
