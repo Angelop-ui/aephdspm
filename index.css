@@ -1,0 +1,370 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+.que{
+  text-align: center;
+  font-size: 50px;
+}
+
+.logo {
+  font-size: 60px;
+  font-family: cursive;
+  margin-bottom: 20px;
+}
+
+header {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('fondo1.jfif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: aqua;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 20px;
+}
+/* From Uiverse.io by mrhyddenn */ 
+button {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  background: rgb(61, 106, 255);
+  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+button:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+button::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+button:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: aqua;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: white;
+}
+
+main {
+  padding: 40px 20px;
+  text-align: center;
+}
+.definicion{
+  font-size: 25px;
+}
+select {
+  width: 220px;
+  height: 45px;
+  font-size: 16px;
+  padding: 8px 12px;
+  color: #1b1f3b;
+  background-color: #e3f2fd;
+  border: 2px solid #00bcd4;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  appearance: none; /* elimina la flecha por defecto (puedes agregar tu propia flecha con ::after si gustas) */
+}
+
+select:hover {
+  background-color: #b3e5fc;
+  border-color: #0288d1;
+  box-shadow: 0 0 15px rgba(3, 169, 244, 0.5);
+  transform: scale(1.03);
+}
+
+select:focus {
+  border-color: #0288d1;
+  box-shadow: 0 0 20px rgba(3, 169, 244, 0.6);
+}
+section {
+  background-color: rgb(106, 240, 217);
+  margin: 20px auto;                /* Centra horizontalmente */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: justify;             /* Justifica el texto */
+  width: fit-content;              /* Ajusta el ancho al contenido */
+  max-width: 90%;                  /* Para que no sea demasiado ancho en pantallas grandes */
+  border-radius: 10px;             /* Opcional: bordes redondeados */
+}
+
+
+img {
+  margin-top: 20px;
+  height: 200px;
+  width: 300px;
+}
+.button {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.button:hover {
+  background: rgb(61, 106, 255);
+  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.button:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+.button::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+.button:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+.radio-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+  color: #222;
+}
+
+/* Oculta el radio por defecto */
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Círculo externo personalizado */
+.custom-radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background-color: #eee;
+  border-radius: 50%;
+  border: 2px solid #00bcd4;
+  transition: 0.3s ease;
+}
+
+/* Círculo interno cuando está seleccionado */
+.radio-container input:checked ~ .custom-radio {
+  background-color: #00bcd4;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.4);
+}
+
+/* Puntito del centro */
+.custom-radio::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio-container input:checked ~ .custom-radio::after {
+  display: block;
+}
+
+.radio-container .custom-radio::after {
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+}
+.comentarios {
+  font-size: 20px; /* Tamaño del texto */
+  line-height: 1.6;
+  color: #222; /* Puedes personalizarlo */
+  background-color: #f0f0f0; /* Opcional para mejor visibilidad */
+  padding: 15px;
+  border-radius: 8px;
+  white-space: pre-wrap; /* Evita scroll horizontal si las líneas son largas */
+}
+/* Botón animado personalizado - clase .boton-flecha */
+.boton-flecha {
+  font-family: inherit;
+  font-size: 20px;
+  background: royalblue;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin-top: 15px; /* separación del textarea */
+}
+
+.boton-flecha span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.boton-flecha svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.boton-flecha:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.boton-flecha:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.boton-flecha:hover span {
+  transform: translateX(5em);
+}
+
+.boton-flecha:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+

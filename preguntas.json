@@ -1,0 +1,52 @@
+[
+    {
+        "categoria": "Awita",
+        "pregunta": "¿Que es el agua pluvial?",
+        "respuesta": "Agua que corre por loe edificios debido a las lluvias",
+        "incorrecta1": "agua de caño",
+        "incorrecta2": "agua de limon",
+        "incorrecta3": "agua de canal",
+        "imagen": "awa3.jpg",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Awita",
+        "pregunta": "¿Que material es mejor tuvo de pvc o tubo galvanizado?",
+        "respuesta": "PVC",
+        "incorrecta1": "Galvanizado",
+        "incorrecta2": "Ninguno",
+        "incorrecta3": "Arriba el pumas",
+        "imagen": "awa4.jpg",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Awita",
+        "pregunta": "¿Cual no es una ventaja del agua pluvial?",
+        "respuesta": "Puede absorber contaminantes del aire",
+        "incorrecta1": "Reduce la demanda de agua potable",
+        "incorrecta2": "Facil instalacion",
+        "incorrecta3": "Aumento en la disponivilidad de agua",
+        "imagen": "awa.jpg",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Awita",
+        "pregunta": "Sólo sirve si llueve mucho Mito o Realidad",
+        "respuesta": "Mito",
+        "incorrecta1": "Realidad",
+        "incorrecta2": "Primero el toluca",
+        "incorrecta3": "segundo el America",
+        "imagen": "awa2.png",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Awita",
+        "pregunta": "¿Cual es una ventaja de el agua pluvial?",
+        "respuesta": "Contribuye a la sostenivilidad de la gestion de agua",
+        "incorrecta1": "Podria ocasionar problemas de salud",
+        "incorrecta2": "Necesidad de tratamiento",
+        "incorrecta3": "Puede absorber contaminantes del aire.",
+        "imagen": "awa5.jpg",
+        "objectFit": "cover"
+    }
+]

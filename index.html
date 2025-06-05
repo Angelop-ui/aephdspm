@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proyecto integrador</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">AGUA PLUVIAL</div>
+    <nav>
+      <ul>
+        <li><a href="ventajas.html">Ventajas</a></li>
+        <li><a href="desventajas.html">Desventajas</a></li>
+        <li><a href="ahorro.php">Calculadora de ahorro</a></li>
+        <li><a href="presupuesto.php">Materiales</a></li>
+        <li><a href="mitos.html">Mitos y realidades</a></li>
+        <li><a href="testimonio.php">Testimonios</a></li>
+        <li><a href="evidencias.php">Evidencias</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div>
+      <section id="home">
+        <h1 class="que">¿Qué es?</h1>
+        <p class="definicion">
+          El agua pluvial son las aguas de lluvia que se precipitan en la superficie terrestre. <br>
+          Estas aguas pueden infiltrarse en el suelo, ser almacenadas en cuerpos de agua o evaporarse, <br>
+          pero una parte significativa se convierte en escorrentía superficial, que es el agua que <br>
+          se desplaza por la superficie del terreno. 
+        </p>
+      </section>
+      <img src="images.jfif" alt="Imagen sobre agua pluvial" />
+    </div>
+  </main>
+  <script>
+        const menumobile = document.getElementById("mobile");
+        const navbar = document.getElementById("navbar");
+        menumobile.addEventListener('click', () =>{
+            navbar.classList.toggle('active');
+            menumobile.addEventListener("click", function () {
+                menu.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+</html>

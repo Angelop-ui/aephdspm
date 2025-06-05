@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto integrador</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">AGUA PLUVIAL</div>
+    <div class="menu" id="mobile">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <nav class="navbar" id="navbar">
+        <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="ventajas.html">Ventajas</a></li>
+        <li><a href="desventajas.html">Desventajas</a></li>
+        <li><a href="ahorro.php">Calculadora de ahorro</a></li>
+        <li><a href="presupuesto.php">Materiales</a></li>
+        <li><a href="mitos.html">Mitos y realidades</a></li>
+        <li><a href="testimonio.php">Testimonios</a></li>
+        <li><a href="evidencias.php">Evidencias</a></li>
+    </ul>
+    </nav>
+    </header>
+    <main>
+        <sector>
+            <section id="home">
+                <h2 class="que">Mitos y Realidades</h2>
+
+<div>
+    <h4>Mito: El agua pluvial no se puede usar en casa</h4>
+    <p><strong>Realidad:</strong> Con filtrado adecuado, puede usarse en limpieza, inodoros y riego.</p>
+
+    <h4>Mito: Es muy caro instalar el sistema</h4>
+    <p><strong>Realidad:</strong> Existen opciones económicas, incluso sistemas caseros muy eficientes.</p>
+
+    <h4>Mito: Sólo sirve si llueve mucho</h4>
+    <p><strong>Realidad:</strong> Incluso con poca lluvia, puedes almacenar una cantidad útil.</p>
+</div>
+
+            </section>
+            <img src="myt.jpg" alt="" width="300" height="200">
+        </sector>
+    </main>
+    
+    <script>
+        const menumobile = document.getElementById("mobile");
+        const navbar = document.getElementById("navbar");
+        menumobile.addEventListener('click', () =>{
+            navbar.classList.toggle('active');
+            menumobile.addEventListener("click", function () {
+                menu.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+</html>
